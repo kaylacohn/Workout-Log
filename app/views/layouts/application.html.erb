@@ -7,8 +7,20 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <%= link_to "Workout Log", root_path, class: "navbar-brand" %>
+      </div>
+      <div class="nav navbar-nav navbar-right">
+        <%= link_to "New Workout", new_workout_path, class: "navbar navbar-link" %>
+      </div>
+    </div>
+  </nav>
 
-<%= yield %>
+  <div class="container">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
