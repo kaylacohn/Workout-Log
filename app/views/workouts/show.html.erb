@@ -4,3 +4,7 @@
   <p><%= @workout.mood %></p>
   <p><%= @workout.length %></p>
 </div>
+
+<%= link_to "Back", root_path %> |
+<%= link_to "Edit", edit_workout_path(@workout) %> |
+<%= link_to "Delete", workout_path(@workout), method: :delete, data: { confrim: "Are you sure?" } %>
