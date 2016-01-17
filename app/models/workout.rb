@@ -1,3 +1,3 @@
 class Workout < ActiveRecord::Base
-  has_many :exercises, dependert: :destroy
+  has_many :exercises, dependent: :destroy
 end
